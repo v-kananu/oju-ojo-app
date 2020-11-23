@@ -1,0 +1,136 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.header{
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 120px;  
+  font-size: 1.9rem;
+  
+}
+
+.input{
+  position: relative;
+  top: 220px;
+}
+
+
+.input input{
+  width: 240px;
+  height: 35px;
+  font: inherit;
+  font-size: 1.2rem; 
+  text-rendering: auto;
+  color: var(--BG_color5);
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  background-color: inherit;
+  padding: inherit;
+  border: 2px solid var( --BG_color3);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
+}
+
+.input input:focus{
+  outline: none;
+}
+
+.input input::placeholder {
+  color: inherit; 
+}
+
+
+.input button{
+  margin-left: 20px;
+  font: inherit;
+  background-color: var(--BG_color3);
+  color: var(--text_color);
+  border: 2px solid var(--BG_color3);
+  padding: 6px 8px 6px 8px;
+  border-radius: 3px;
+}
+
+.input button:hover{
+  background-color: var(--BG_color3a); 
+  border: 2px solid var(--BG_color3a);
+}
+
+.input button:focus{
+  outline: none;
+}
+
+.weatherCard{
+  width: 100vw;
+  height: 260px;
+  background: linear-gradient(to bottom, transparent, var(--BG_color2));
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.weatherCard img{
+  margin: auto;
+ 
+}
+
+.weatherCard h3{
+  display: inline-block;
+  margin: auto;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.back{
+  margin-top: 77vh;
+  color: var(--BG_color1);
+}
+
+
+
+@media (min-width: 376px) and (max-width: 450px){
+  .back{
+    margin-top: 80vh;
+  }
+
+}
+/* @media (max-width: 411px){
+  .back{
+    margin-top: 71vh;
+  }
+} */
+
+@media (min-width: 321px) and (max-width: 375px){
+
+  .input input{
+    width: 200px;
+  }
+  .back{
+    margin-top: 78vh;
+  }
+
+}
+
+@media (min-width: 200px) and (max-width: 320px){
+  .input input{
+    width: 170px;
+  }
+  .back{
+    margin-top: 75vh;
+  }
+}
