@@ -1,4 +1,4 @@
 
 # OJU OJO WEATHER APP
 
-project is live on: **https://bit.ly/2UUxAdQ.** 
+project is live on: **https://hardcore-mcclintock-5a69da.netlify.app/.** 
